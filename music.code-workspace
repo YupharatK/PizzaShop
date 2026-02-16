@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "music",
+			"path": "../music"
+		},
+		{
+			"name": "Pizza",
+			"path": "../Pizza"
+		},
+		{
+			"name": "img",
+			"path": "../../../Users/Admin/Downloads/drive-download-20231001T031853Z-001/img"
+		},
+		{
+			"name": "Midterm",
+			"path": "../Midterm"
+		},
+		{
+			"path": "../../../Users/Admin/Downloads/drive-download-20231001T031853Z-001"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Pizza_pro"
+	}
+}
