@@ -1,55 +1,57 @@
-# Pizza Portfolio UI (Frontend-only Mock)
+# Project Name 🚀
+**Pizza Portfolio UI (Frontend-only Mock)**
 
-โปรเจกนี้คือเวอร์ชันสำหรับโชว์ในพอร์ตโฟลิโอ โดยแปลงจากระบบ PHP + MySQL เดิมให้เป็น **UI/Frontend ล้วน ๆ**
+A frontend-only pizza ordering demo for portfolio showcase using mock data and local storage, without database/backend connection.
 
-- ไม่เชื่อมฐานข้อมูล
-- ไม่เรียก backend API
-- ใช้ `mock data` + `localStorage` เพื่อจำลอง flow การใช้งานจริง
+## ✨ Features
 
-## Demo Flow
+- Customer menu page with mock pizza data
+- Product detail page (size/crust/quantity) with dynamic pricing
+- Cart, mock checkout, profile summary, and owner order-status dashboard
 
-1. หน้าเริ่มต้น `index.php` (Demo Login)
-2. หน้าเมนูลูกค้า `customer.php`
-3. หน้ารายละเอียดเมนู `detail.php?id=1`
-4. หน้าตะกร้าและ checkout mock `cart.php`
-5. หน้าโปรไฟล์ `account.php`
-6. หน้าเจ้าของร้านดู/เปลี่ยนสถานะออเดอร์ `owner.php`
+## 🛠 Tech Stack
 
-## Tech Stack
+- PHP (used as page templates only)
+- HTML/CSS
+- Vanilla JavaScript + LocalStorage (Mock Data)
 
-- HTML/CSS/JavaScript
-- PHP ใช้เป็นไฟล์หน้าเว็บเท่านั้น (ไม่มี business logic backend)
-- Browser `localStorage` สำหรับเก็บ cart/orders/profile
-
-## โครงสร้างสำคัญ
-
-- `css/app.css` สไตล์หลักของทุกหน้า
-- `js/mock-data.js` ข้อมูลจำลอง (pizza, size, crust, seeded orders)
-- `js/store.js` ตัวจัดการ state (cart, orders, profile)
-- `js/index-page.js` logic หน้า demo login
-- `js/customer-page.js` render เมนูจาก mock data
-- `detail.js` logic หน้า detail และ add to cart
-- `js/cart-page.js` logic ตะกร้า + สร้างออเดอร์จำลอง
-- `js/account-page.js` logic หน้าโปรไฟล์
-- `js/owner-page.js` logic หน้า dashboard owner
-
-## วิธีรัน
-
-### วิธีที่ 1: ใช้ PHP built-in server
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/YupharatK/PizzaShop.git
+cd PizzaShop
+# run with local server (choose one)
 php -S localhost:8000
+# or
+npx serve .
 ```
 
-แล้วเปิด:
+---
 
-- `http://localhost:8000/index.php`
+# Project Name 🚀
+**Pizza Portfolio UI (เวอร์ชัน Frontend-only Mock)**
 
-### วิธีที่ 2: ใช้ Live Server/Static Server
+โปรเจกเดโมร้านพิซซ่าสำหรับใส่พอร์ตโฟลิโอ เน้นโชว์ UI/UX และ flow การใช้งาน โดยใช้ mock data และ local storage โดยไม่เชื่อมฐานข้อมูลหรือ backend จริง
 
-รันจากโฟลเดอร์โปรเจกแล้วเปิด `index.php` ผ่านเซิร์ฟเวอร์ไฟล์ปกติ
+## ✨ Features
 
-## หมายเหตุ
+- หน้าเมนูลูกค้าแสดงข้อมูลพิซซ่าจำลอง
+- หน้ารายละเอียดสินค้า (ขนาด/แป้ง/จำนวน) พร้อมคำนวณราคาแบบไดนามิก
+- หน้าตะกร้า, checkout จำลอง, โปรไฟล์ผู้ใช้, และแดชบอร์ดเจ้าของร้านสำหรับอัปเดตสถานะออเดอร์
 
-- ไฟล์ backend เดิมบางไฟล์ (`login.php`, `submit_order.php`, `update_cart.php`, `remove_from_cart.php`, `add_to_cart.php`) ถูกปรับให้เป็น redirect/stub เพื่อให้โปรเจกนี้เป็น frontend-only อย่างชัดเจน
-- หากต้องการเวอร์ชัน production ควรแยก backend API จริง + ระบบ auth + database + validation เพิ่มเติม
+## 🛠 Tech Stack
+
+- PHP (ใช้เป็นไฟล์หน้าเว็บเท่านั้น)
+- HTML/CSS
+- Vanilla JavaScript + LocalStorage (Mock Data)
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/YupharatK/PizzaShop.git
+cd PizzaShop
+# รันด้วย local server (เลือกอย่างใดอย่างหนึ่ง)
+php -S localhost:8000
+# หรือ
+npx serve .
+```
